@@ -1,0 +1,6 @@
+tensorflow
+Werkzeug==1.0.0
+Flask
+numpy
+gunicorn
+

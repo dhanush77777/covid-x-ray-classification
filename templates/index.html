@@ -1,0 +1,67 @@
+{% extends "base.html" %} {% block content %}
+
+<h2>Covid X-ray Classifier</h2>
+
+<div>
+    <form id="upload-file" method="post" enctype="multipart/form-data">
+        <label style="background-color:orange" for="imageUpload" class="upload-label">
+            Choose...
+        </label>
+        <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+    </form>
+
+    <div class="image-section" style="display:none;">
+        <div class="img-preview">
+            <div id="imagePreview">
+            </div>
+        </div>
+        <div>
+            <button type="button" class="btn btn-outline-dark " id="btn-predict">Predict</button>
+        </div>
+    </div>
+
+    <div class="loader" style="display:none;"></div>
+
+    <h3 id="result">
+        <span> </span>
+    </h3>
+
+</div>
+<br>
+<br>
+<br>
+
+
+<div  >
+<h4>Dos</h4>
+<strong>
+<ul style="font-style:italic;color:orange">
+<li>If you have mild symptoms then you can stay at home and take treatment.</li>
+<li>Isolate yourself in a separate room that has an attached bathroom.</li>
+<li>If you have a low-grade fever then you can take paracetamol/Dolo.</li>
+<li>Check your fever and oxygen levels at least 10-15 times a day. You can set a reminder for that on your mobile.</li>
+<li>If the oxygen level is between 94-100 then you need not worry. If it drops below 94 then contact your doctor.</li>
+<li>Have a liquid diet, easy to digest food, and drink at least 8-10 glasses of water.</li>
+
+</ul>
+</strong>
+
+<h4>Don'ts</h4>
+<strong>
+<ul style="font-style:italic;color:orange">
+<li>Don’t take steroids or Remdesivir without a doctor’s prescription if you have mild symptoms.</li>
+<li>If the symptoms are severe then stay in touch with your doctor from time to time. </li>
+<li>If the viral load is high, you will get a fever for at least 5-7 days and your oxygen level will show a dip. So, keep checking the fever and oxygen level.</li>
+<liFor this, first, try to check with the nearby hospital regarding the availability of beds. Know which hospitals have a ventilator, ICU, or oxygen beds.</li>
+<li>Do not google and take medication. Instead, speak to your family doctor.</li>
+<li>Don’t take treatment at home if symptoms are severe.</li>
+
+</ul>
+</strong>
+
+
+
+
+</div>
+
+{% endblock %}
