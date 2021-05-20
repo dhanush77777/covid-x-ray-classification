@@ -1,4 +1,7 @@
-tensorflow
+tensorboard==2.4.1
+tensorboard-plugin-wit
+tensorflow-cpu
+tensorflow-estimator
 Flask==1.1.1
 Werkzeug==1.0.0
 numpy
